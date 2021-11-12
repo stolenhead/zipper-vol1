@@ -1,0 +1,17 @@
+<mat-card class="product-card" *ngIf="data">
+  <a routerLink="/product/{{dataCasted?.id}}"><img mat-card-image [src]="data.src" ></a>
+  <mat-card-content class="product-info mt-2x">
+    <a routerLink="/profile/{{dataCasted?.autor.user_name}}"><span [hidden]="!profile" class="zipper-light-font zipper-italic zipper-sm-text zipper-gray-dark-text zipper-barlow">{{dataCasted?.autor.name | uppercase}}</span></a>
+    <h4 class="card-name zipper-roboto zipper-sm-text">{{dataCasted?.product_name | uppercase }}</h4>
+    <div class="zipper-flex card-price-box">
+      <span class="zipper-light-font zipper-sm-text zipper-gray-dark-text zipper-barlow" >{{dataCasted?.autor.city}},&nbsp; {{dataCasted?.autor.country}}</span>
+      <div class="card-price zipper-roboto zipper-sm-text zipper-bold-font zipper-flex-1">
+        <span class="zipper-sm-text">PEN</span>{{dataCasted.current_price}}</div>
+    </div>
+    
+  </mat-card-content>
+  <mat-card-actions *ngIf="!new" >
+    <button class="card-btn"  mat-button>AÑADIR AL CARRITO {{new}}</button>
+  </mat-card-actions>
+</mat-card>
+

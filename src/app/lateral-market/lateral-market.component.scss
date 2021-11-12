@@ -1,0 +1,104 @@
+@import 'styles.scss';
+
+
+.lateral-market-box{
+  padding: $margin-inside-md;
+  a{
+    display: none
+  }
+  .lateral-market{
+    position: sticky;
+    top: 5rem;
+    margin-bottom: 8rem;
+    .lateral-market-menu{
+      display: none;
+      span{
+        font-size: 20px;
+      }
+    }
+    .lateral-filters-box{
+      p{
+        font-size: 24px;
+      }
+      .lateral-filter {
+        .zipper-color-gray{
+          margin-top: 10px;
+          label{
+            font-size: 18px;
+          }
+        }
+        
+      }
+    }
+  }
+}
+
+
+@media (max-width: $breakpoint-m-max){
+
+  .show{
+    width: 100%!important;
+    padding: $margin-inside-md;
+    box-sizing: border-box;
+  }
+
+  .lateral-market-box{
+    padding: 0px;
+    a{
+      display: block!important;
+      position: absolute;
+      top: 0;
+      padding: 5px 19px;
+      float: right;
+      width: 100%;
+      text-align: right;
+      box-sizing: border-box;
+    }
+    .lateral-market{
+    
+      width: 0;
+      position: fixed;
+      z-index: 8;
+      height: 100%;
+      background-color: white;
+      top: 0!important;
+      left: 0;
+      transition: 0.5s;
+      overflow: hidden;
+      .lateral-market-menu{
+        display: block!important;
+      }
+      .lateral-filters-box{
+        .lateral-filter {
+          .zipper-color-gray{
+            label{
+              font-size: 20px;
+            }
+          }
+          
+        }
+      }
+    }
+  }
+  
+}
+
+.lateral-profile{
+  ul{
+    padding-left: 0%;
+    li{
+      text-transform: uppercase;
+      padding: 10px 0px;
+      cursor: pointer;
+      .profile-menu-arrow{
+        float: right;
+      }
+    }
+  }
+}
+
+.profile-menu-list.active{
+  .profile-menu-option, .profile-menu-arrow{
+    color:$links-color;
+  }
+}

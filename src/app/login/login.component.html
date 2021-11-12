@@ -1,0 +1,46 @@
+<section class="zipper-background-gray p-tb-4x">
+  <div class="zipper-login-section  zipper-max-sm center zipper-relative ">
+    <div class="zipper-login-container center p-g-4x">
+      <div *ngIf="!createAccount">
+        <h2 class="mb-4x">Ingresa con tu cuenta</h2>
+        <form [formGroup]="loginForm" class="form-data">
+          <div class="mt-2x  zipper-edit-input zipper-flex ml-3x">
+            <label for="mail" class="zipper-barlow ">EMAIL</label>
+            <input class="zipper-color-gray zipper-input" id="mail" type="text"  formControlName="email">
+          </div>
+          <div class="mt-2x  zipper-edit-input zipper-flex ml-3x">
+            <label for="pass" class="zipper-barlow ">CONTRASEÑA</label>
+            <input class="zipper-color-gray zipper-input" id="pass" type="password"  formControlName="password">
+          </div>
+          <div class="text-center mt-3x mb-3x"><button  class=" zipper-regular-font zipper-roboto zipper-btn-black zipper-btn-md">INICIAR SESIÓN</button></div>
+        </form>
+        <a class="mt-3x zipper-pointer">¿Te olvidaste la contraseña?</a>
+        <p class="or mt-4x mb-4x">ó</p>
+       
+        <div class="text-center"><button (click)="createAccount = true" class=" zipper-regular-font zipper-roboto zipper-btn-white zipper-btn-md">CREAR CUENTA</button></div>
+      </div>
+      
+      <div *ngIf="createAccount">
+        <h2 class="mb-3x">¿YA TIENES CUENTA?</h2>
+        <div class="text-center"><button (click)="createAccount = false" class=" zipper-regular-font zipper-roboto zipper-btn-white zipper-btn-md">INICIAR SESIÓN</button></div>
+        <p class="or mt-4x mb-4x">ó</p>
+        <form [formGroup]="signUpForm" class="form-data">
+          <div class="mt-2x  zipper-edit-input zipper-flex ml-3x">
+            <label for="name" class="zipper-barlow ">NOMBRE</label>
+            <input class="zipper-color-gray zipper-input" id="name" type="text"  formControlName="name">
+          </div>
+          <div class="mt-2x  zipper-edit-input zipper-flex ml-3x">
+            <label for="email" class="zipper-barlow ">EMAIL</label>
+            <input class="zipper-color-gray zipper-input" id="email" type="text"  formControlName="email">
+          </div>
+          <div class="mt-2x  zipper-edit-input zipper-flex ml-3x">
+            <label for="password" class="zipper-barlow ">CONTRASEÑA</label>
+            <input class="zipper-color-gray zipper-input" id="password" type="text"  formControlName="password">
+          </div>
+          <div class="text-center mt-4x"><button (click)="createAccount = true" class=" zipper-regular-font zipper-roboto zipper-btn-black zipper-btn-md">REGRISTRARME</button></div>
+        </form>
+      </div>
+      
+    </div>
+  </div>
+</section>

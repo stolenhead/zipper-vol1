@@ -1,0 +1,22 @@
+<div class="lateral-market-box " >
+  <a type="button" class="zipper-pointer" (click)="openSidebar(isFilterMob)">filter</a>
+  <div class="lateral-market  " id="lateral">
+    <div  class="lateral-market-menu p-tb-3x zipper-color-gray">
+      <span  class="zipper-barlow zipper-regular-font">Limpiar</span>
+      <span class="zipper-right zipper-barlow zipper-regular-font zipper-pointer" (click)="openSidebar(isFilterMob)">Cerrar</span>
+    </div>
+    <div class="lateral-filters-box">
+      <p class="p-tb-3x zipper-barlow zipper-italic zipper-medium-font zipper-color-gray" >CATEGORÍAS</p>
+      <div class="lateral-filter">
+        <form [formGroup]="categoriesForm" >
+          <div *ngFor="let categoria of categories;index as i" class="mt-1x zipper-color-gray ">
+            <input class="zipper-color-gray" id="{{categoria.id}}" type="radio" value="{{categoria.name}}" name="category" formControlName="category">
+            <label for="{{categoria.id}}" class="zipper-roboto zipper-light-font zipper-color-gray">{{categoria.name | titlecase}}</label>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  
+</div>
+

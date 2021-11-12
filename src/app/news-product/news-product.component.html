@@ -1,0 +1,14 @@
+<div class="news">
+  <ngx-slick-carousel class="carousel slider-section_1" 
+  #slickModal="slick-carousel" 
+  [config]="slideConfig2" 
+  (init)="slickInit($event)"
+  (breakpoint)="breakpoint($event)"
+  (afterChange)="afterChange($event)"
+  (beforeChange)="beforeChange($event)">
+  <div ngxSlickItem *ngFor="let product of cards;index as i" class="slide">
+    <app-product-card [data]="product" [type]="'new'" ></app-product-card>
+  </div>
+</ngx-slick-carousel>
+
+</div>

@@ -1,0 +1,58 @@
+<div class="profile-photo">
+    <div class="group-gap">
+      <!-- Upload image -->
+        <div class="avatar-upload zipper-flex">
+          <form [formGroup]="uploadForm" (ngSubmit)="onSubmit()" class="profile-avatar">
+            <div class="avatar-edit">
+              <input type='file' id="imageUpload" accept=".png, .jpg, .jpeg" #fileInput (change)="uploadFile($event)" />
+            </div>
+            <div class="avatar-preview-box center">
+              <div class="avatar-preview">
+                <div id="imagePreview" [style.backgroundImage]="'url('+ imageUrl +')'">
+                </div>
+              </div>
+              <div class="edit-photo"  (click)="fileInput.click()">
+                <fa-icon [icon]="plus" ></fa-icon>
+              </div>
+              <!-- <button color="primary" mat-mini-fab type="submit" class="edit-photo"  (click)="fileInput.click()">
+                <fa-icon [icon]="plus" ></fa-icon>
+              </button>   -->
+            </div>
+          </form>
+          <div class="profile-name ml-3x" >
+            <div class="zipper-flex">
+              <h3 class="zipper-barlow zipper-medium-font">ANDREA CABRERA fsfdfdgd</h3>
+              <button class="ml-3x zipper-btn-black follow-btn zipper-regular-font zipper-regular-font">Seguir</button>
+            </div>
+            <p class="zipper-barlow zipper-medium-font zipper-color-text-gray">@macaera.latam</p>
+            <div class="top-profile-rate zipper-flex mt-2x">
+              <div>
+                <span><fa-icon [icon]= "star"></fa-icon></span>
+                <span><fa-icon [icon]= "star"></fa-icon></span>
+              </div>
+              <span class="zipper-roboto ml-2x">(321)</span>
+            </div>
+            <div class="top-profile-sales mt-2x zipper-flex">
+              <span class="zipper-roboto">32 vendidos</span>
+              <div class="top-profile-country zipper-roboto ml-3x ">
+                Lima, Perú
+              </div>
+            </div>
+            
+            <!-- <div (click)="showNameForm=true">Editar</div> -->
+            <!-- <button mat-button color="primary" class="center" (click)="showNameForm=true">Editar Perfil</button> -->
+          </div>
+
+          <!-- <form [formGroup]="uploaNameForm" class="profile-name-form" *ngIf="showNameForm">
+            <mat-form-field class="example-full-width">
+              <mat-label>Nombre</mat-label>
+              <input matInput placeholder="" value="Sushi">
+            </mat-form-field>
+            <button mat-raised-button color="primary">Guardar</button>
+          </form>
+          -->
+        </div>  
+    </div>
+      <!-- Submit Button -->    
+  
+</div>

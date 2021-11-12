@@ -1,0 +1,42 @@
+@import 'styles.scss';
+
+.zipper-login-section{
+  .zipper-login-container{
+    width: 400px;
+    background-color: white;
+    box-sizing: content-box;
+    position: relative;
+    .zipper-edit-input{
+      input{
+        min-height: 30px;
+        width: 70%;
+      }
+      label{
+        width: 30%;
+        font-size: $font-lg;
+        font-weight: 400;
+        letter-spacing: 1px;
+      }
+    }
+  }
+  .or{
+    width: 100%;
+    text-align: center;
+    position: relative;
+  }
+  .or::before, .or::after {
+    content: "";
+    height: 0.0625rem;
+    background-color: rgb(215, 215, 215);
+    width: calc(50% - 12px);
+    position: absolute;
+    display: block;
+    top: calc(50% + 1px);
+  }
+  .or::before{
+    left: 0px;
+  }
+  .or::after{
+    right: 0;
+  }
+}

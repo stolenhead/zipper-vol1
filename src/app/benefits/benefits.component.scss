@@ -1,0 +1,60 @@
+@import 'styles.scss';
+
+.benefits{
+  background-color: $gray-background;
+  .benefits-left{
+    position: relative;
+    .zipper-benefits-photo{
+      height: 400px;
+      justify-content: left;
+      img{
+        max-width: 100%;
+        height: auto;
+      }
+    }
+    .zipper-benefits-text{
+      position: absolute;
+      left: 15rem;
+    }
+  }
+  .benefits-right{
+    p{
+      font-size: $font-xxl;
+      font-weight: 400;
+    }
+    ul{
+      float: right;
+      li{
+        font-size: $font-xxl;
+        font-family: $roboto!important;
+        font-weight: 400;
+        margin-top: 5px;
+      }
+    }
+  }
+}
+
+@media (max-width: $breakpoint-m-min){
+  .benefits{
+    display: block;
+    .benefits-left{
+      .zipper-benefits-photo{
+        height: auto!important;
+        width: 60%!important;
+      }
+      .zipper-benefits-text{
+        left: 9rem;
+      }
+    }
+    .benefits-right{
+      padding: $padding-md;
+      p, li{
+        font-size: $font-title-mob!important;
+      }
+      ul{
+        float: unset!important;
+        
+      }
+    }
+  }
+}

@@ -1,0 +1,34 @@
+<div class="zipper-bottom-author-profile">
+  <mat-tab-group class="detail-description-product">
+    <mat-tab label="Diseños"> 
+      <div class="mt-3x mb-3x mr-3x zipper-align-r "><a class="zipper-pointer" (click)="openDialog()">Add<fa-icon class="zipper-social-mob" [icon]="add"></fa-icon></a></div>
+      <div class="container p-tb-3x">
+        <div *ngFor="let product of products;index as i" class="col-lg-3">
+          <app-product-card [data]="product" [type]="'new'" ></app-product-card>
+        </div>
+      </div>
+    </mat-tab>
+    <mat-tab >
+      <ng-template mat-tab-label class="zipper-barlow">
+        Bocetos
+      </ng-template>
+      <div>
+        <div>
+          <h3>
+            Andrea Cabrera
+          </h3>
+          <p>
+            100% Wool
+            Lining, 100% Viscose
+
+            Our model is wearing a size 1, she is 173cm tall /bust 92/ waist 67/ hips 98
+            The Field Jacket is designed for a relaxed fit, size 1 covers EU sizes 36 to 38
+
+            The Field Jacket has a classic cut. The shoulders are wide and slightly dropped. With a cord on the inside the waist can be adjusted in the front and the back. The Jacket features a set of 4 bellow pockets and the typical NoC hanger detail in the back. It has a classic collar and the buttons are hidden all the way down.
+          </p>
+        </div>
+      </div> 
+    </mat-tab>
+  </mat-tab-group>
+</div>
+

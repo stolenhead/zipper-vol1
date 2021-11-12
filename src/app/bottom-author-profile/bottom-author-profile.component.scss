@@ -1,0 +1,20 @@
+@import 'styles.scss';
+
+.mat-card{
+  background-color: transparent!important;
+}
+
+@media (max-width: $breakpoint-m){
+  .zipper-bottom-author-profile{
+    .detail-description-product{
+      .mat-tab-body-wrapper{
+        max-width:100%;
+      }
+      .container{
+        .col-lg-3{
+          width: 50%!important;
+        }
+      }
+    }
+  }
+}

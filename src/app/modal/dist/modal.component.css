@@ -1,0 +1,12 @@
+.submitPhoto .submitPhotoData .submitDataInputBox label {
+  display: block;
+}
+.submitPhoto .submitPhotoData .submitDataInputBox input {
+  width: 300px;
+}
+.submitPhoto .submitPhotoData .submitDataInputBox .submitDataLeft {
+  float: left;
+}
+.submitPhoto .submitPhotoData .submitDataInputBox .submitDataRight {
+  float: right;
+}

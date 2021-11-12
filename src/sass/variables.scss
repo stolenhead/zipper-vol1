@@ -1,0 +1,57 @@
+$flex: flex;
+$xs:50%;
+$sm:50%;
+$m:33%;
+$l:20%;
+$xl:13%;
+
+$full-view:100%;
+$breakpoint-xs:480px;
+$breakpoint-sm:512px;
+$breakpoint-m:768px;
+$breakpoint-l:1024px;
+$breakpoint-xl-min:1280px;
+$breakpoint-l-min:1000px;
+$breakpoint-m-min:767px;
+$breakpoint-m-max:1023px;
+
+$nav-height:80px;
+$shadow:  0px 2px 4px 0px #514f4f12;
+$icons-width:20px;
+$icons-mob-width:25px;
+$font-sm:14px;
+$font-xs-sm:12px;
+
+$font-md:16px;
+$font-lg:18px;
+$font-xl:24px;
+$font-xxl:30px;
+$font-big:50px;
+$font-title-mob: 20px;
+$font-big-mob:30px;
+$font-big-line-mob:40px;
+$font-cards-title: 16px;
+
+$padding-g: 15px;
+$padding-md: 20px;
+$margin-inside-md: 25px;
+$margin-inside-xl: 60px;
+$dark: #a29e9e;
+$light-dark:#e8e8e8;
+$links-color:purple;
+$border-light: 0.3px solid $dark;
+$offert-border-btn:1px solid #3ed235;
+$offert-btn: #3ed235;
+
+$yellow:#FF0;
+$green: #54D63F;
+$gray:#f6f6f6;
+$gray-color:#777474;
+$dark-gray:#777474;
+$light-gray: #ccc;
+$blue:#CDEAFF;
+$gray-background:#F6F6F6;
+$tauri: 'Tauri', serif;
+$roboto: 'Roboto', serif;
+$barlow: 'Barlow Condensed', sans-serif;
+$header-height:80px;

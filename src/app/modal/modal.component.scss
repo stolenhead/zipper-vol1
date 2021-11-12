@@ -1,0 +1,120 @@
+@import 'styles.scss';
+
+
+#modalSubmitPhotoBox.show{
+  width: 100%;
+  height: 100%;
+}
+
+#imagePreviewModal.show{
+  height: 80%;
+  width: 80%;
+  background-position: center;
+  background-size: contain;
+  margin:auto;
+  background-repeat:no-repeat;
+}
+
+.submitPhotoBox{
+  .modal-container{
+    .modal-submit-photo-box{
+      position: relative;
+      width: 90%;
+      min-width: 400px;
+      border: 1px dotted $dark-gray;
+      height: 300px;
+      .form-edit-photo{
+        height: 100%;
+        .form-edit{
+          position: absolute;
+          top: 40%;
+          width: 100%;
+          text-align: center;
+          & > input{
+            display: none;
+          }
+          span{
+            display: block;
+          }
+          fa-icon{
+            font-size: 50px;
+            cursor: pointer;
+          }
+        }
+      }
+      .form-add-photo{
+        .form-edit{
+          position: absolute;
+          bottom: 0px;
+          width: 100%;
+          z-index:9;
+          text-align: right;
+          & > input{
+            display: none;
+          }
+          span{
+            display: block;
+          }
+          fa-icon{
+            font-size: 30px;
+            cursor: pointer;
+          }
+        }
+      }
+      #modalSubmitPhotoBox{
+        position: absolute;
+        top: 0;
+        background-color: white;
+        .img-preview{
+          width: 100%;
+          height: 100%;
+          #imagePreviewModal{
+            top: 0;
+            background-repeat: no-repeat;
+            background-color: white;
+            margin: auto;
+          }
+        }
+       
+      }
+      
+    }
+    .modal-carrousel-preview{
+      .img-preview{
+        display: flex;
+        #imageCarrouselModal{
+          height: 70px;
+          width: 70px;
+          background-position: center;
+          background-size: contain;
+          background-repeat: no-repeat;
+          margin-right: 5px;
+        }
+      }
+      
+    }
+    .submitPhotoData{
+      
+      .submitDataInputBox{
+        label{
+          display: block;
+          font-size: $font-lg;
+          margin-bottom: 5px;
+          letter-spacing: 1px;
+        }
+        input{
+          width: 300px;
+          min-height: 30px;
+          font-size: 16px;
+        }
+        .submitDataLeft{
+          float: left;
+        }
+        .submitDataRight{
+          float: right;
+        }
+      }
+    }
+  }
+ 
+}

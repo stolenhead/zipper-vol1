@@ -1,0 +1,73 @@
+<section class="zipper-profile-section">
+  <div class="top-profile-section zipper-flex">
+    <div class="top-foto-section">
+      <app-profile-photo></app-profile-photo>
+    </div>
+    <div class="top-follow-section zipper-flex-1 zipper-align-r">
+      <div>
+        <span class="zipper-roboto "><strong>23</strong> seguidores</span>
+        <span class="zipper-roboto ml-2x"><strong>3</strong> seguidos</span>
+      </div>
+      <div class="top-follow-section-btns">
+        <div class="mt-2x">
+          <button class="zipper-roboto zipper-btn-black zipper-btn-md zipper-regular-font">Enviar mensaje</button>
+        </div>
+        <div class="mt-2x">
+         <a routerLink="/account/edit"><button class="zipper-roboto zipper-btn-white zipper-btn-md zipper-regular-font">Editar Perfil</button></a> 
+        </div>
+      </div>
+      
+    </div>
+  </div>
+<!-- <div class="lateral-profile">
+  <app-profile-photo></app-profile-photo>
+  <ul>
+    <li class="profile-menu-list" [ngClass]="{'active':list.active}" *ngFor="let list of profileList ;index as i" >
+      <div (click)="setActiveList(profileList[i])">
+        <span *ngIf="!showIcon" class="profile-menu-option">{{list.name}}</span> 
+        <span *ngIf="showIcon"><fa-icon class="profile-menu-option" [icon]="list.icon"></fa-icon></span>
+        <fa-icon class="profile-menu-arrow" *ngIf="list.active" [icon]="arrowRight"></fa-icon> 
+      </div>
+    </li>
+  </ul>
+</div> -->
+
+
+  <!-- <div class="profile-box">
+    <div class="profile-box-header flex-box">
+      <div class="profile-header-img">
+        <fa-icon [icon]="user" ></fa-icon>
+      </div>
+      <div class="profile-description">
+        <h4>Amdrea cAVRERA</h4>
+        <p>Latin american designer</p>
+        <a>Uncoming Auction: Nov 12, 2020</a>
+      </div>
+      <div class="profile-followers">
+        <button>Enviar mensaje</button>
+        <span>29 followers</span>
+      </div>
+    </div>
+    <div class="profile-tabs">
+      <ul class="profile-tabs-box flex-box">
+        <li class="profile-tab">List
+        </li>
+        <li class="profile-tab">
+          <span class="hide-tab">Events</span>
+          <span> <fa-icon [icon]="calendar"></fa-icon></span>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div >
+    <a>Past Lots</a>
+    <div *ngFor="let product of cards;index as i" class="box-flex-item now-card">
+      <app-offert-card [data]="product"  ></app-offert-card>  
+    </div>
+
+    <div *ngFor="let product of cards;index as i" class="box-flex-item now-card">
+      <app-offert-card [data]="product"  ></app-offert-card>  
+    </div>
+  </div> -->
+</section>
+

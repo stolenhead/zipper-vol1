@@ -1,0 +1,245 @@
+@import 'styles.scss';
+
+@keyframes rotating {
+  from{
+      -webkit-transform: rotate(0deg);
+  }
+  to{
+      -webkit-transform: rotate(360deg);
+  }
+}
+
+.rotating {
+  animation: rotating 6s linear infinite;
+}
+
+.home-box{
+  .for-designers-btn{
+    position: fixed;
+    right: 1rem;
+    top: 27rem;
+    img{
+      width: 100px;
+    }
+  }
+  
+  .home-wrap-box{
+    .zipper-home-text{
+      padding: $padding-md 0;
+      font-size: $font-xl;
+    }
+    .zipper-home-header-photo{
+      height: 400px;
+      justify-content: right;
+      img{
+        max-width: 100%;
+        height: auto;
+      }
+    }
+    .zipper-home-header-text{
+      h1{
+        width: 400px;
+        padding: $padding-md;
+      }
+      div{
+        position: absolute;
+        left: -36px;
+        width: 500px;
+        p{
+          color: black;
+        }
+      }
+    }
+  }
+ 
+  //rediseña
+  .zipper-rediseña{
+    .zipper-rediseña-info{
+      background-color: $gray-background;
+      padding: $padding-md;
+      h3{
+        font-size: $font-big;
+      }
+      p,ul{
+        font-size: $font-xl;
+        li{
+          margin-top: 5px;
+        }
+      }
+
+    }
+    .zipper-rediseña-img-md{
+      width: 70%;
+      height: auto;
+    }
+    .zipper-rediseña-img-xs{
+      width: 100%;
+      height: 80px;
+      display: none;
+    }
+    .zipper-rediseña-image{
+      background-image:  url(/assets/images/landing/box.png)!important;
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+  }
+}
+//max-767px
+@media (max-width: $breakpoint-m-min){
+  .home-box{
+    .for-designers-btn{
+      right: 1rem;
+      position: absolute!important;
+      top: 34vh!important;
+      img{
+        width: 70px;
+      }
+    }
+    .zipper-home-text{
+      font-size: 16px;
+    }
+
+    .home-wrap-box{
+      .zipper-home-header-photo{
+        width: 40%;
+        height: auto!important;
+      }
+      .zipper-home-header-text{
+        h1, div{
+          width: auto!important;
+        }
+        h1{
+          padding: 10px $padding-md;
+        }
+      }
+    }
+
+    .zipper-rediseña{
+      .zipper-rediseña-info{
+        h3{
+          font-size: $font-big-mob;
+        }
+        p, ul{
+          font-size:16px
+        }
+      }
+      .zipper-rediseña-img-xs{
+        display: block!important;
+      }
+      .zipper-rediseña-img-md{
+        display: none;
+      }
+    }
+
+    .designer-click{
+      .zipper-btn-big{
+        padding: 15px 20px!important;
+      }
+    }
+  }
+}
+ //1023px
+
+@media (max-width: $breakpoint-m-max){
+  .for-designers-btn{
+    right: 1rem;
+    top: 50vh!important; 
+    img{
+      width: 70px;
+    }
+  }
+  .zipper-home-text{
+    padding: $padding-md 0;
+    font-size: 20px;
+  }
+  .home-wrap-box{
+      max-width: 100%;
+      flex-wrap: wrap;
+      flex-direction: row;
+    .zipper-home-header-photo{
+      width: 40%;
+      height: auto;
+    }
+    .zipper-home-header-text{
+      width: 60%;
+    }
+  }
+}
+
+@media only screen and (max-width: $breakpoint-m-max) and (min-width: $breakpoint-m)  {
+  .home-box{
+    .for-designers-btn{
+      right: 2rem;
+      top: 50vh; 
+      img{
+        width: 90px;
+      }
+    }
+    .home-wrap-box{
+      .zipper-home-header-photo{
+        width: 30%;
+      }
+      .zipper-home-header-text{
+        width: 70%;
+        div{
+          width: auto;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $breakpoint-xl-min) and (min-width: $breakpoint-l){
+  .home-box{
+    .for-designers-btn{
+      right: 2rem;
+      top: 30vh; 
+      img{
+        width: 90px;
+      }
+    }
+    .zipper-home-text{
+      padding: $padding-md 0;
+      font-size: 30px;
+    }
+    .home-wrap-box{
+      .zipper-home-header-photo{
+        justify-content: center;
+      }
+      .zipper-home-header-text{
+        width: 70%;
+        div{
+          left: -30%;
+        }
+      }
+    }
+  }
+}
+
+
+
+// .popular-card{
+//   width: $xl;
+//   @media (max-width: $breakpoint-m){
+//     width: $m;
+//   }
+//   @media (max-width: $breakpoint-xs){
+//     width: $xs;
+//   }
+// }
+// .now-card{
+//   width:$m;
+//   @media (max-width: $breakpoint-m){
+//     width: $sm;
+//   }
+//   @media (max-width: $breakpoint-xs){
+//     width: $full-view;
+//   }
+// }
+
+// .subasta-feature-categories  {
+//   border:1px solid black;
+//   height: 200px;
+//   margin: $padding-g 0px;
+// }

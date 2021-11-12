@@ -1,0 +1,33 @@
+<div class="zipper-flex shop-container">
+  <div class="shop-left">
+    <div class="shop-image zipper-image" [style.backgroundImage]="'url('+ shopListData.main_image +')'">
+    </div>
+  </div>
+  <div class="shop-right">
+    <div class="box">
+      <div>
+        <div>
+          <p class="zipper-roboto">{{shopListData.name }}</p>
+          <p class="zipper-roboto zipper-color-gray zipper-sm-text">{{shopListData.short_description}}</p>
+        </div>
+        <div class="mt-2x">
+          <p class="zipper-roboto zipper-color-gray zipper-sm-text"> Color: {{shopListData.color }}</p>
+          <p class="zipper-roboto zipper-color-gray zipper-sm-text"> Talla: {{shopListData.size }}</p>
+        </div>
+      </div>
+      <div class="zipper-align-r">
+        <form [formGroup]="editProductQuantity">
+          <div>
+            <select [(ngModel)]="seleccionado" formControlName="quantity">
+              <option [value]="item" *ngFor="let item of lista">{{item}}</option>
+            </select>
+          </div>
+        </form>
+        <div class="mt-2x"><span class="mr-1x">{{shopListData.moneda}}</span>{{shopListData.price}}</div>
+      </div>
+    </div>
+   
+  </div>
+  
+  
+</div>

@@ -1,0 +1,7 @@
+.news .slick-prev, .news .slick-next {
+  height: 36px !important;
+  width: 36px !important;
+}
+.news .slider-section_1 .slick-slide {
+  margin-left: 15px !important;
+}

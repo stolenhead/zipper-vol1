@@ -1,0 +1,105 @@
+
+<header>
+  <div class="zipper-header zipper-relative">
+    <div class="zipper-nav-wrap center zipper-max-sm zipper-flex zipper-no-padding zipper-center-align">
+      <div class="logo">
+        <div class="hide">
+          <div class="zipper-mob-logo zipper-flex zipper-center-align">
+            <a class="navbar-brand" >ZIPPER</a>
+            <a class=" zipper-checkout-btn zipper-btn-md ml-3x zipper-disabled" >CHECKOUT</a>
+            <a class="zipper-nav-icon zipper-flex-1" style="margin-right: 20px;" > 
+              <img src="../../assets/images/icons/shop.png" class="zipper-icons-mob zipper-shop-mob">
+            </a>
+            <a (click)="openSidebar(isNavbarMobile)"><fa-icon [icon]="menu" class="zipper-icons-mob"></fa-icon></a>
+          </div>
+        </div>
+        
+        <a class="navbar-brand zipper-hide" >ZIPPER</a>
+      </div>
+      <div class="navbar-nav zipper-hide">
+        <!-- <a uiSref="home" class="pmc-home-menu-link"  (click)="openSidebar(isNavbarCollapsed)">HOME</a> -->
+        <a  class="zipper-nav-link zipper-case active letter-2x">COMPRAR</a>
+        <a  class="zipper-nav-link zipper-case letter-2x" >PARA DISEÑADORES</a>
+        <a   class="zipper-nav-link zipper-case letter-2x" >ACERCA</a>
+      </div>
+      <form [formGroup]="contactForm" class=" zipper-hide zipper-flex zipper-flex-1 zipper-search-form zipper-center-align">
+        <div class="zipper-relative zipper-flex-1">
+          <label class="zipper-visually-hidden">Search</label>
+          <input type="search" placeholder="Search">
+          <a><img src="../../assets/images/icons/loupe.png" class="zipper-icons-g"></a>
+        </div>
+      </form>  
+      <div class="zipper-hide zipper-flex-icons zipper-flex zipper-center-align">
+        <div class="zipper-nav-icon">
+          <a  class="letter-2x">FAQ</a>
+        </div>
+        <a routerLink="login" class="zipper-nav-icon" >
+          <img src="../../assets/images/icons/user.png" class="zipper-icons-g">
+        </a>
+        <a class="zipper-nav-icon"> 
+          <img src="../../assets/images/icons/shop.png" class="zipper-icons-g">
+        </a>
+      </div>
+      <a class=" zipper-hide zipper-checkout-btn zipper-btn-md ml-3x zipper-disabled"  >CHECKOUT</a>
+    </div>
+
+    <div class="zipper-nav-mob zipper-nav-wrap hide" id="sidebar-nav" >
+      <div class="logo zipper-flex zipper-center-align">
+        <a class="navbar-brand" >ZIPPER</a>
+        <div class="zipper-flex-1 ">
+          <fa-icon class="close-wrap zipper-icons-mob" [icon]="close" (click)="openSidebar(isNavbarMobile)"></fa-icon>
+        </div>
+        
+      </div>
+      <div class="zipper-nav-wrap">
+        <div class="navbar-nav">
+          <!-- <a uiSref="home" class="pmc-home-menu-link"  (click)="openSidebar(isNavbarCollapsed)">HOME</a> -->
+          <a  class="zipper-nav-link zipper-case active letter-2x" >COMPRAR</a>
+          <ul class="zipper-subnav-mob ">
+            <li class="zipper-italic "><a routerLink="mujeres" class=" zipper-light-font">Mujeres</a></li>
+            <li class="zipper-italic"><a class=" zipper-light-font" >Hombres</a></li>
+            <li class="zipper-italic"><a class=" zipper-light-font" >Genderless</a></li>
+          </ul>
+          <a uiSref="services" class="zipper-nav-link zipper-case letter-2x" >PARA DISEÑADORES</a>
+          <a uiSref="publishing"  class="zipper-nav-link zipper-case letter-2x" >ACERCA</a>
+          <hr >
+          <ul class="zipper-subnav-mob-log">
+           <li class="zipper-btn-md zipper-btn-black"><a >SIGN UP</a></li> 
+           <li class="zipper-btn-md zipper-btn-white"><a >LOG IN</a></li> 
+          </ul>
+          <ul class="zipper-subnav-mob-profile">
+           <li > <a>PERFIL</a></li>
+           <li ><a>LOG OUT</a></li> 
+          </ul>
+          <div class="zipper-flex zipper-center-align center">
+            <a class="zipper-social-mob" href="https://www.facebook.com/ZIPPER.LATAM" target="_blank">
+              <img src="../../assets/images/icons/facebook.png" class="">
+            </a>
+            <a class="zipper-social-mob" href="https://www.instagram.com/zipper.latam/" target="_blank">
+              <img src="../../assets/images/icons/ig.png" class="">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="zipper-subnav zipper-hide">
+    <nav class="zipper-flex">
+      <div >
+        <a routerLink="mujeres" class="zipper-relative">Mujeres</a>
+      
+        <a uiSref="eventList"  class="zipper-relative">Hombres</a>
+        <a uiSref="eventList"  class="zipper-relative">Genderless</a>
+      </div>
+    </nav>
+  </div>
+</header>
+  
+
+
+
+
+
+
+
+

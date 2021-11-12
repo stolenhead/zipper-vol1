@@ -1,0 +1,43 @@
+.shop-list-container{
+  .zipper-profile-section {
+    .zipper-edit-container{
+      .product-list{
+        width: 60%;
+      }
+      .product-total-cost{
+        width: 38%;
+        height: 300px;
+        position: sticky;
+        box-sizing: border-box;
+        top: 0px;
+        .total-container{
+          .zipper-total-grid{
+            .total-base{
+              .zipper-grid{         
+                .grid-elm{
+                  display: inline-block;
+                  -webkit-flex-basis: 66.66667%;
+                  flex-basis: 66.66667%;
+                  width: 66.66667%;
+                  max-width: 66.66667%;
+                }
+                .grid-elm-r{
+                  display: inline-block;
+                  -webkit-flex-basis: 33.33333%;
+                  flex-basis: 33.33333%;
+                  width: 33.33333%;
+                  max-width: 33.33333%;
+                }
+              }
+            }
+          }
+        }
+        .zipper-btn-group{
+          button{
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,560 @@
+{
+  "profile": 
+    {"state": true,
+      "messages": "2",
+      "notification": "3",
+      "articles": "4",
+      "offerts": "5",
+      "boughts": "4"
+    },
+  "cards":[
+    {
+      "id": "a1",
+      "product_name":"Dress Party",
+      "current_price":100.00,
+      "estimated_price_min":100.00,
+      "estimated_price_max":200.00,
+      "bid": false,
+      "day_of_publication":"02/07/2020",
+      "last_day": "24/02/2020",
+      "numbers_of_bids": "19",
+      "buy_now": false,
+      "category":"fashion",
+      "tags":[
+        {"id":"aa",
+          "name": "dress"},
+        {"id":"bb",
+        "name":"fashion"}
+      ],
+      "src": "/assets/images/dress.jpg",
+      "delivery":{
+        "is_international":false,
+        "price":10.00,
+        "method_page":"autor",
+        "country":"Peru"
+      },
+      "autor":{
+        "name": "Andrea C.",
+        "user_name": "andreacb",
+        "id":"1",
+        "city":"Lima",
+        "country":"Peru"
+      }
+    },{
+      "id": "a2",
+      "product_name":"Chaqueta de Piel",
+      "current_price":100.00,
+      "estimated_price_min":100.00,
+      "estimated_price_max":200.00,
+      "bid": {
+        "able_to_bid": true
+      },
+      "day_of_publication":"02/07/2020",
+      "last_day": "24/02/2020",
+      "numbers_of_bids": "19",
+      "buy_now": false,
+      "category":"fashion",
+      "tags":[
+        {"id":"aa",
+          "name": "dress"},
+        {"id":"bb",
+        "name":"fashion"}
+      ],
+      "src": "/assets/images/jacket.jpg",
+      "delivery":{
+        "is_international":false,
+        "price":10.00,
+        "method_page":"autor",
+        "country":"Peru"
+      },
+      "autor":{
+        "name": "Andrea C.",
+        "user_name": "andreacb",
+        "id":"1",
+        "city":"Lima",
+        "country":"Peru"
+      }
+    },
+    {
+      "id": "a3",
+      "product_name":"Saco Teñido natural",
+      "current_price":100.00,
+      "estimated_price_min":100.00,
+      "estimated_price_max":200.00,
+      "bid": false,
+      "day_of_publication":"02/07/2020",
+      "last_day": "24/02/2020",
+      "numbers_of_bids": "19",
+      "buy_now": false,
+      "category":"fashion",
+      "tags":[
+        {"id":"aa",
+          "name": "dress"},
+        {"id":"bb",
+        "name":"fashion"}
+      ],
+      "src": "/assets/images/sac.jpg",
+      "delivery":{
+        "is_international":false,
+        "price":10.00,
+        "method_page":"autor",
+        "country":"Peru"
+      },
+      "autor":{
+        "name": "Andrea C.",
+        "user_name": "andreacb",
+        "id":"1",
+        "city":"Lima",
+        "country":"Peru"
+      }
+    },
+    {
+      "id": "a4",
+      "product_name":"Chalina de seda",
+      "current_price":100.00,
+      "estimated_price_min":100.00,
+      "estimated_price_max":200.00,
+      "bid": false,
+      "day_of_publication":"02/07/2020",
+      "last_day": "24/02/2020",
+      "numbers_of_bids": "19",
+      "buy_now": false,
+      "category":"fashion",
+      "tags":[
+        {"id":"aa",
+          "name": "dress"},
+        {"id":"bb",
+        "name":"fashion"}
+      ],
+      "src": "/assets/images/silk.jpg",
+      "delivery":{
+        "is_international":false,
+        "price":10.00,
+        "method_page":"autor",
+        "country":"Peru"
+      },
+      "autor":{
+        "name": "Andrea C.",
+        "user_name": "andreacb",
+        "id":"1",
+        "city":"Lima",
+        "country":"Peru"
+      }
+    },
+    {
+      "id": "a5",
+      "product_name":"Sweater tie die",
+      "current_price":100.00,
+      "estimated_price_min":100.00,
+      "estimated_price_max":200.00,
+      "bid": {
+        "able_to_bid": true
+      },
+      "day_of_publication":"02/07/2020",
+      "last_day": "24/02/2020",
+      "numbers_of_bids": "19",
+      "buy_now": false,
+      "category":"fashion",
+      "tags":[
+        {"id":"aa",
+          "name": "dress"},
+        {"id":"bb",
+        "name":"fashion"}
+      ],
+      "src": "/assets/images/sweat.jpg",
+      "delivery":{
+        "is_international":false,
+        "price":10.00,
+        "method_page":"autor",
+        "country":"Peru"
+      },
+      "autor":{
+        "name": "Andrea C.",
+        "user_name": "andreacb",
+        "id":"1",
+        "city":"Lima",
+        "country":"Peru"
+      }
+    },
+    {
+      "id": "a6",
+      "product_name":"Dress Party",
+      "current_price":100.00,
+      "estimated_price_min":100.00,
+      "estimated_price_max":200.00,
+      "bid": {
+        "able_to_bid": true
+      },
+      "day_of_publication":"02/07/2020",
+      "last_day": "24/02/2020",
+      "numbers_of_bids": "19",
+      "buy_now": false,
+      "category":"fashion",
+      "tags":[
+        {"id":"aa",
+          "name": "dress"},
+        {"id":"bb",
+        "name":"fashion"}
+      ],
+      "src": "/assets/images/dress.jpg",
+      "delivery":{
+        "is_international":false,
+        "price":10.00,
+        "method_page":"autor",
+        "country":"Peru"
+      },
+      "autor":{
+        "name": "Andrea C.",
+        "user_name": "andreacb",
+        "id":"1",
+        "city":"Lima",
+        "country":"Peru"
+      }
+    },{
+      "id": "a7",
+      "product_name":"Chaqueta de Piel",
+      "current_price":100.00,
+      "estimated_price_min":100.00,
+      "estimated_price_max":200.00,
+      "bid": {
+        "able_to_bid": true
+      },
+      "day_of_publication":"02/07/2020",
+      "last_day": "24/02/2020",
+      "numbers_of_bids": "19",
+      "buy_now": false,
+      "category":"fashion",
+      "tags":[
+        {"id":"aa",
+          "name": "dress"},
+        {"id":"bb",
+        "name":"fashion"}
+      ],
+      "src": "/assets/images/jacket.jpg",
+      "delivery":{
+        "is_international":false,
+        "price":10.00,
+        "method_page":"autor",
+        "country":"Peru"
+      },
+      "autor":{
+        "name": "Andrea C.",
+        "user_name": "andreacb",
+        "id":"1",
+        "city":"Lima",
+        "country":"Peru"
+      }
+    },
+    {
+      "id": "a8",
+      "product_name":"Saco Teñido natural",
+      "current_price":100.00,
+      "estimated_price_min":100.00,
+      "estimated_price_max":200.00,
+      "bid": {
+        "able_to_bid": true
+      },
+      "day_of_publication":"02/07/2020",
+      "last_day": "24/02/2020",
+      "numbers_of_bids": "19",
+      "buy_now": false,
+      "category":"fashion",
+      "tags":[
+        {"id":"aa",
+          "name": "dress"},
+        {"id":"bb",
+        "name":"fashion"}
+      ],
+      "src": "/assets/images/sac.jpg",
+      "delivery":{
+        "is_international":false,
+        "price":10.00,
+        "method_page":"autor",
+        "country":"Peru"
+      },
+      "autor":{
+        "name": "Andrea C.",
+        "user_name": "andreacb",
+        "id":"1",
+        "city":"Lima",
+        "country":"Peru"
+      }
+    },
+    {
+      "id": "a9",
+      "product_name":"Chalina de seda",
+      "current_price":100.00,
+      "estimated_price_min":100.00,
+      "estimated_price_max":200.00,
+      "bid": {
+        "able_to_bid": true
+      },
+      "day_of_publication":"02/07/2020",
+      "last_day": "24/02/2020",
+      "numbers_of_bids": "19",
+      "buy_now": false,
+      "category":"fashion",
+      "tags":[
+        {"id":"aa",
+          "name": "dress"},
+        {"id":"bb",
+        "name":"fashion"}
+      ],
+      "src": "/assets/images/silk.jpg",
+      "delivery":{
+        "is_international":false,
+        "price":10.00,
+        "method_page":"autor",
+        "country":"Peru"
+      },
+      "autor":{
+        "name": "Andrea C.",
+        "user_name": "andreacb",
+        "id":"1",
+        "city":"Lima",
+        "country":"Peru"
+      }
+    },
+    {
+      "id": "a10",
+      "product_name":"Sweater tie die",
+      "current_price":100.00,
+      "estimated_price_min":100.00,
+      "estimated_price_max":200.00,
+      "bid": false,
+      "day_of_publication":"02/07/2020",
+      "last_day": "24/02/2020",
+      "numbers_of_bids": "19",
+      "buy_now": false,
+      "category":"fashion",
+      "tags":[
+        {"id":"aa",
+          "name": "dress"},
+        {"id":"bb",
+        "name":"fashion"}
+      ],
+      "src": "/assets/images/sweat.jpg",
+      "delivery":{
+        "is_international":false,
+        "price":10.00,
+        "method_page":"autor",
+        "country":"Peru"
+      },
+      "autor":{
+        "name": "Andrea C.",
+        "user_name": "andreacb",
+        "id":"1",
+        "city":"Lima",
+        "country":"Peru"
+      }
+    }
+  ],
+  "collectionsa":[
+    {
+      "id":"1",
+      "name":"ETHNIC FASHION 2021",
+      "designer":"ANDREA CABRERA",
+      "category":"DENIM",
+      "openDate":"2 jan, 2021 18:20",
+      "closeDate":"6 jan, 2021 18:20",
+      "buyWay":"bid",
+      "createdDate":"1 jan, 2021 18:20",
+      "private":false,
+      "price":200,
+      "bids":3,
+      "lightbox":{
+        "principalPhoto":true,
+        "principalUrl":"/assets/images/jacket.jpg"
+      }
+    },
+    {
+      "id":"2",
+      "name":"ETHNIC FASHION 2021",
+      "designer":"ANDREA CABRERA",
+      "category":"DENIM",
+      "openDate":"2 jan, 2021 18:20",
+      "closeDate":"6 jan, 2021 18:20",
+      "buyWay":"bid",
+      "createdDate":"1 jan, 2021 18:20",
+      "private":false,
+      "price":200,
+      "bids":3,
+      "lightbox":{
+        "principalPhoto":true,
+        "principalUrl":"/assets/images/sac.jpg"
+      }
+    },
+    {
+      "id":"3",
+      "name":"ETHNIC FASHION 2021",
+      "designer":"ANDREA CABRERA",
+      "category":"DENIM",
+      "openDate":"2 jan, 2021 18:20",
+      "closeDate":"6 jan, 2021 18:20",
+      "buyWay":"bid",
+      "createdDate":"1 jan, 2021 18:20",
+      "private":false,
+      "price":200,
+      "bids":3,
+      "lightbox":{
+        "principalPhoto":true,
+        "principalUrl":"/assets/images/sac.jpg"
+      }
+    }
+  ],
+  "description":[
+    {
+      "id":"aa",
+      "q":"chaqueta-de-piel",
+      "product_name":"Chaqueta de Piel",
+      "price":"100.00",
+      "moneda": "PEN",
+      "country":"PERU",
+      "ciudad":"Lima",
+      "is_avaiable":true,
+      "product_description": "handmade pastel blue,orange,pink and yellow checkered crochet corset top made for concourse in class 3re group.and fgdadgdg jhghddgdf gfhgff ",
+      "product_materials": "Hecho de 100% algodon orgánico, tejido artesanal por manos peruanos",
+      "product_size": "M",
+      "detail_sizes":  {"ancho": "27cm", "largo":"75cm"},
+      "product_category": "T-shirts",
+      "product_colors":["red", "pink"],
+      "tag_categories": [
+        {"id":"aa",
+        "name": "dress"},
+        {"id":"bb",
+        "name": "EXPERIMENTAL"}],
+      "is_product_in_dsct":false,
+      "is_complete_look":false,
+      "is_redesigned":false,
+      "is_personalizable": true,
+      "personalizable":{
+        "description": "kajldjlaksjdslkd",
+        "price": "30",
+        "moneda":"PEN"
+      },
+      "day_of_publication":"02/07/2020",
+      "images":[{
+        "src":"/assets/images/jacket.jpg"
+      },{
+          "src":"/assets/images/dress.jpg"
+        },{
+          "src":"/assets/images/jacket.jpg"
+        }],
+      "main_image":"/assets/images/jacket.jpg",
+      "delivery":{
+        "is_international":false,
+        "price":10.00,
+        "method_page":"autor",
+        "country":"Peru"
+      },
+      "autor":{
+        "name": "Andrea C.",
+        "user_name":"andreacb",
+        "id":"1",
+        "city":"Lima",
+        "country":"Peru",
+        "profile_image":"/assets/images/jacket.jpg",
+        "wssp_link":"fuyggkgj"
+      }
+      
+    }
+  ],
+  "shop":{
+   "id": "A1",
+   "products": [
+     {
+       "id": "A",
+       "name": "Casaca men",
+       "price": "200",
+       "moneda":"PEN",
+       "quantity": "1",
+       "is_product_in_dsct": true,
+       "size": "M",
+       "color": "black",
+       "short_description":"BODY SUIT-Camiseta de manga",
+       "main_image":"/assets/images/jacket.jpg",
+       "is_personalizable": true,
+       "personalizable":{
+         "description": "kajldjlaksjdslkd",
+         "price": "30",
+         "moneda":"PEN"
+       },
+       "dsct":{
+         "dsct_type": "percentage",
+         "description": "30%",
+         "last_date": "21/12/2021"
+       }
+     },
+     {
+      "id": "B",
+      "name": "Dress flower",
+      "price": "100",
+      "moneda":"PEN",
+      "quantity": "1",
+      "is_product_in_dsct": false,
+      "short_description":"BODY SUIT-Camiseta de manga",
+      "size": "M",
+      "color": "black",
+      "is_personalizable": false,
+      "main_image": "/assets/images/sac.jpg"
+    },
+    {
+      "id": "C",
+      "name": "Pant",
+      "price": "80",
+      "moneda":"PEN",
+      "short_description":"BODY SUIT-Camiseta de manga",
+      "quantity": "1",
+      "is_product_in_dsct": false,
+      "size": "M",
+      "color": "black",
+      "is_personalizable": false,
+      "main_image":"/assets/images/jacket.jpg"
+    }
+   ]
+  },
+  "categories":[
+    {
+      "id": "1",
+      "name":"KNIT",
+      "code":"knit",
+      "image":"ndkf",
+      "src": "/assets/images/jacket.jpg"
+    },
+    {
+      "id": "2",
+      "name":"PRINTS",
+      "code":"print",
+      "image":"jlksdj",
+      "src": "/assets/images/jacket.jpg"
+    },
+    {
+      "id": "3",
+      "name":"EXPERIMENTAL",
+      "code":"experimental",
+      "src": "/assets/images/jacket.jpg",
+      "image":"mdlfd"
+    },
+    {
+      "id": "4",
+      "name":"DENIM",
+      "code":"denim",
+      "src": "/assets/images/jacket.jpg",
+      "image":"mflk"
+    },
+    {
+      "id": "5",
+      "name":"SUSTAINABLE",
+      "code":"sustainable",
+      "src": "/assets/images/jacket.jpg",
+      "image":"jlksdj"
+    },
+    {
+      "id": "6",
+      "name":"PRET A PORTER",
+      "code":"pret_a_porter",
+      "src": "/assets/images/jacket.jpg",
+      "image":"hfhgfh"
+    }
+  ]
+}

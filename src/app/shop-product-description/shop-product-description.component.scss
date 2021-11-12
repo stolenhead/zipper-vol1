@@ -1,0 +1,30 @@
+@import 'styles.scss';
+
+.shop-container{
+  display: grid;
+  grid-auto-flow: column;
+  -ms-grid-columns: 86px 1fr;
+  grid-template-columns: 86px 1fr;
+  grid-gap: 15px;
+  .shop-left{
+    .shop-image{
+      width: 90px;
+      height: 100px;
+    }
+  }
+  .shop-right{
+    display: -ms-grid;
+    display: grid;
+    grid-auto-flow: row;
+    -ms-grid-rows: auto 1fr;
+    -ms-grid-columns: 1fr;
+    .box{
+      display: -ms-grid;
+    display: grid;
+    grid-auto-flow: column;
+    grid-gap: 15px;
+    -ms-grid-columns: 1fr auto;
+    -ms-grid-row: 1;
+    }
+  }
+}

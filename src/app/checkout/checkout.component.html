@@ -1,0 +1,133 @@
+<section class=" zipper-back-white p-tb-4x checkout-container">
+  <div class="zipper-checkout-section zipper-background-gray p-g-4x zipper-max-sm center zipper-relative ">
+    <div class="zipper-edit-container  zipper-background-gray zipper-flex">
+      <div class="detail-information zipper-back-white mr-3x p-3x ">
+        <div>
+          <div class="product-list-text">
+            <h2 class="mb-3x">Detalles</h2>
+          </div>
+          <div>
+            <form [formGroup]="submitCheckout" class="submitPhotoData" >
+              <div class="mt-2x submitDataInputBox zipper-flex">
+                <div class="submitDataLeft first mt-2x ">
+                  <label for="name" class="zipper-barlow ">NOMBRE</label>
+                  <input class="zipper-color-gray zipper-input " id="name" type="text"  formControlName="name">
+                </div>
+                <div class="submitDataRight first mt-2x ml-3x">
+                  <label for="userName" class="zipper-barlow">APELLIDO</label>
+                  <input class="zipper-color-gray zipper-input" id="userName" type="text"  formControlName="lastName">
+                </div>
+              </div>
+              <div class="submitDataRight mt-2x ">
+                <label for="userName" class="zipper-barlow  ">PAÍS</label>
+                <input class="zipper-color-gray zipper-input" id="userName" type="text"  formControlName="country">
+              </div>
+              <div class="submitDataRight mt-2x ">
+                <label for="userName" class="zipper-barlow  ">CALLE</label>
+                <input class="zipper-color-gray zipper-input" id="userName" type="text"  formControlName="street">
+              </div>
+              <div class="submitDataRight mt-2x ">
+                <label for="userName" class="zipper-barlow  ">LOCALIDAD/CIUDAD</label>
+                <input class="zipper-color-gray zipper-input" id="userName" type="text"  formControlName="city">
+              </div>
+              <div class="submitDataRight mt-2x ">
+                <label for="userName" class="zipper-barlow  ">REGIÓN/PROVINCIA</label>
+                <input class="zipper-color-gray zipper-input" id="userName" type="text"  formControlName="region">
+              </div>
+              <div class="submitDataRight mt-2x ">
+                <label for="userName" class="zipper-barlow  ">CÓDIGO POSTAL</label>
+                <input class="zipper-color-gray zipper-input" id="userName" type="text"  formControlName="zipCode">
+              </div>
+              <div class="submitDataRight mt-2x ">
+                <label for="userName" class="zipper-barlow  ">TELÉFONO</label>
+                <input class="zipper-color-gray zipper-input" id="userName" type="text"  formControlName="number">
+              </div>
+              <div class="submitDataRight mt-2x ">
+                <label for="userName" class="zipper-barlow  ">CORREO ELECTRÓNICO</label>
+                <input class="zipper-color-gray zipper-input" id="userName" type="text"  formControlName="email">
+              </div>
+              <div class="submitDataRadio mt-2x">
+                <label for="userName" class="zipper-barlow  ">CREAR CUENTA</label>
+                <input class="zipper-color-gray zipper-input" id="userName" type="radio"  formControlName="terms">
+              </div>
+              <div class="submitDataRight mt-2x ">
+                <label for="notes" class="zipper-barlow  ">NOTAS</label>
+                <textarea class="zipper-color-gray zipper-input" id="notes" rows="4" cols="50"  formControlName="notes"></textarea>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="product-total-cost zipper-back-white p-3x">
+        <div>
+          <h2 class="mb-3x">
+            Total
+          </h2>
+          <div class="total-container">
+            <div class="zipper-total-grid">
+              <div class="total-base">
+                <div class="zipper-grid mb-2x">
+                  <div class="grid-elm zipper-roboto">
+                    Subtotal
+                  </div>
+                  <div class="grid-elm-r">
+                   <span class="mr-1x">PEN</span> 12
+                  </div>
+                </div>
+                <div class="zipper-grid mb-2x">
+                  <div class="grid-elm zipper-roboto">
+                    Envío
+                  </div>
+                  <div class="grid-elm-r">
+                    <span class="mr-1x">PEN</span> 10
+                  </div>
+                </div>
+                <hr>
+                <div class="zipper-grid">
+                  <div class="grid-elm zipper-roboto">
+                    Total
+                  </div>
+                  <div class="grid-elm-r">
+                    <span class="mr-1x">PEN</span> 22
+                  </div>
+                </div>   
+              </div>
+            </div>
+          </div>
+          <div class="mt-4x mb-4x">
+            <form>
+              <div>
+                <input class="zipper-color-gray" id="app" type="radio" value="app" name="payWay" formControlName="payWay">
+                <label for="app" class="zipper-roboto zipper-light-font ">Pago por Yape o Plin</label>     
+                <div class="mt-2x">
+                  <p class="zipper-roboto zipper-light-font zipper-color-gray zipper-sm-text">YAPE / LUKITA / PLIN </p>
+                  <p class="zipper-roboto zipper-light-font zipper-color-gray zipper-sm-text"> Enviar el voucher del pago al correo zipper.latam@gmail.com
+                  </p>
+                </div> 
+              </div>
+              <div class="mt-3x mb-3x">
+                <input class="zipper-color-gray" id="transfer" type="radio" value="transfer" name="payWay" formControlName="payWay">
+                <label for="transfer" class="zipper-roboto zipper-light-font ">Transferencia bancaria</label>
+                <div class="mt-2x">
+                  <p class="zipper-roboto zipper-light-font zipper-color-gray zipper-sm-text">
+                    CUENTA CORRIENTE BCP: 194-2540319-0-86
+                    </p>
+                  <p class="zipper-roboto zipper-light-font zipper-color-gray zipper-sm-text">Enviar el voucher del pago al correo zipper.latam@gmail.com
+                  </p>
+                </div> 
+              </div>
+            </form>
+            <hr >
+            <div  class="mt-3x">
+              Sus datos personales se utilizarán para procesar su pedido, respaldar su experiencia en este sitio web y para otros fines descritos en nuestra Política de privacidad.
+            </div>
+          </div>
+          <div class="mt-3x zipper-btn-group text-center">
+            <a > <button class="zipper-btn zipper-btn-md zipper-btn-black" >REALIZAR PEDIDO</button></a>
+           </div>
+        </div>
+      </div>
+    </div>
+   
+  </div>
+</section>

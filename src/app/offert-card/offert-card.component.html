@@ -1,0 +1,22 @@
+<mat-card class="now-card-box">
+  <img [src]="data.src" alt="Photo of a Shiba Inu">
+  <div class="now-card-content">
+    <h4>{{ data.product_name | uppercase}}</h4>
+    <span class="heart"><fa-icon [icon]="heart"></fa-icon></span>
+    <div class="now-price">
+      <div class="now-price-box">Current:<span>{{ data.current_price }}</span></div>
+      <div class="now-price-box">Estimated:<span>{{ data.estimated_price_min }}</span></div>
+      <div class="now-price-box">Bid:<span>{{ data.estimated_price_max }}</span></div>
+      <!-- <div class="now-price-box"><div>$15.00</div><span>+$10.00</span></div> -->
+    </div>
+    <div class="btn-box">
+      <button  *ngIf="!data.bid" class="btn draw-border center" >Bid!</button>
+      <app-bids *ngIf="data.bid" class=" bid-input center"></app-bids>
+    </div>
+    
+    <!-- <button mat-button> Ofertar</button> -->
+    <div class="now-bid">{{ data?.numbers_of_bids}} bids</div>
+    <div class="now-time">Termina en 1d 2h</div>
+  </div>
+  
+</mat-card>

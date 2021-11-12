@@ -1,0 +1,61 @@
+@import 'styles.scss';
+
+.profile-photo{
+  .avatar-upload{
+    .profile-avatar{
+      .avatar-preview-box{
+        width: 100px;
+        position: relative;
+        .edit-photo{
+          position: absolute;
+          top: 0;
+          width:100%;
+          padding-top: 80%;
+          cursor: pointer;
+          fa-icon{
+            font-size: 24px;
+            float: right;
+            color: $links-color;
+            @media (max-width: $breakpoint-sm){
+              font-size: $font-sm;
+            }
+          }
+        }
+        @media (max-width: $breakpoint-sm){
+          width: 100%;
+        }
+      }
+      @media(max-width:$breakpoint-m-min){
+        width: 100px;
+      }
+    }
+    
+  }
+  .profile-name{
+    h3{
+      text-align: center;
+      margin-bottom: 0px;
+      text-transform: uppercase;
+      font-size: $font-xl;
+      @media (max-width: $breakpoint-sm){
+        font-size: $font-sm;
+      }
+    }
+    
+    .follow-btn{
+      padding: 5px 15px;
+      font-size: 14px;
+      border-radius: 10px;
+    }
+
+    button {
+      display: block;
+    }
+  }
+  
+}
+
+
+
+
+

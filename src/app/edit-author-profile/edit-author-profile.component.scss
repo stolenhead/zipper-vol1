@@ -1,0 +1,52 @@
+@import 'styles.scss';
+
+.zipper-edit-container{
+  width: 600px;
+  box-sizing: content-box;
+  background-color: white;
+  .zipper-edit-input{
+    input, textarea{
+      min-height: 30px;
+      width: 70%;
+    }
+    label{
+      width: 30%;
+      font-size: $font-lg;
+      font-weight: 400;
+      letter-spacing: 1px;
+    }
+  }
+}
+
+@media (max-width:$breakpoint-m){
+  .zipper-edit-container{
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    .form-photo{
+      width: 70px;
+      .avatar-preview-box {
+        .avatar-preview{
+          height: 70px!important;
+        }
+      }
+    }
+    .form-data{
+      margin-top: $margin-inside-md;
+      .zipper-edit-input{
+        display: block;
+        margin-left: 0px!important;
+        label{
+          display: block;
+          width: 100%;
+        }
+        input, textarea{
+          box-sizing: border-box;
+          margin-top: 10px;
+          font-size: $font-md;
+          width: 100%;
+        }
+      }
+    }
+  }
+}

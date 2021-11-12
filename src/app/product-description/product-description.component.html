@@ -1,0 +1,84 @@
+<section class="zipper-max-sm center zipper-relative  mb-4x">
+  <div class="description-box">
+    <span><fa-icon [icon] ="back"></fa-icon></span>
+    <div class="description-container">
+      <div class="description-photo-left  " >
+        <div  *ngIf= "!isMobile" class="zipper-flex">
+          <div class="description-photo-carousel-box mr-3x" *ngIf="productDescription">
+            <div *ngFor="let photo of productDescription?.images ;index as i" [style.backgroundImage]="'url('+ photo.src +')'">
+            </div>
+          </div>
+         <div>
+          <lib-ngx-image-zoom 
+          [thumbImage]="productDescription?.images[0].src" [fullImage]="productDescription?.main_image"
+          [magnification]="1"
+          [enableScrollZoom]="true"
+          [enableLens]="true"
+          [lensWidth]="200"
+          [zoomMode]="'toogle'" 
+          ></lib-ngx-image-zoom> 
+         </div>
+     
+        </div>
+       
+       
+        <div *ngIf = "isMobile">
+          <app-product-carousel-photos [images]="productDescription?.images"></app-product-carousel-photos>
+        </div>
+      </div>  
+
+      <div class="description-photo-right zipper-flex-1">
+        <div class="author-description-product">
+          <app-short-profile-photo></app-short-profile-photo>
+        </div>
+        <div class="main-description-product">
+          <h2 class="zipper-roboto zipper-medium-font">{{productDescription?.product_name}}</h2>
+          <div class="mt-3x zipper-regular-font zipper-lg-text zipper-roboto">
+            <span>PEN</span>
+            {{ productDescription?.price}}
+          </div>
+        </div>
+
+        <div class="mt-4x description-tabs">
+          <mat-tab-group class="detail-description-product ">
+            <mat-tab label="DESCRIPCIÓN"> 
+              <div class="mg-3x">
+                <p>{{ productDescription?.product_description }}</p>
+                <p class="mt-3x mb-3x">TALLA:<span class="ml-2x">{{ productDescription?.product_size}}</span></p>
+                <div *ngIf="productDescription?.detail_sizes" >
+                  <div *ngFor="let size of objectKeys(productDescription?.detail_sizes) " > 
+                    <span>{{ size | uppercase }}:</span><span class="ml-2x"> {{ productDescription?.detail_sizes[size] }}</span>
+                  </div>
+                </div>
+                
+                <div class="mt-3x">
+                  Comunicate conmigo con el siguiente link : {{ productDescription?.autor.wssp_link}}
+                </div>
+              </div>
+            </mat-tab>
+            <mat-tab label="MATERIALES">
+              <div class="mg-3x">
+                <div>
+                  <p>
+                   {{productDescription?.product_materials }}
+                  </p>
+                </div>
+              </div> 
+            </mat-tab>
+            
+          </mat-tab-group>
+        </div>
+        
+        <div class="mt-2x zipper-btn-group">
+          <button class="zipper-btn zipper-btn-md zipper-btn-black">AÑADIR AL CARRITO</button>
+          <!-- <button>CHECKOUT</button> -->
+        </div> 
+        
+        <div class="mt-2x zipper-btn-group">
+         <a routerLink="/shop-list/{{productDescription?.id}}"> <button class="zipper-btn zipper-btn-md zipper-btn-white" >COMPRAR</button></a>
+        </div>
+      </div>  
+    </div>
+    
+  </div>
+</section>

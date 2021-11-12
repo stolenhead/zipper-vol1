@@ -1,0 +1,21 @@
+.new-desiners-box{
+  mat-card-header{
+    mat-card-title{
+      text-align: center;
+    }
+  }
+  .new-designer-photo{
+    img{
+      width: 100%;
+      max-width: 130px;
+      height: 130px;
+      border-radius: 100%;
+    }
+  }
+  .new-designer-follow{
+    display: flex;
+    button{
+      border: 1px solid black;
+    }
+  }
+}

@@ -1,0 +1,66 @@
+<section class="zipper-background-gray p-tb-4x">
+  <div class="zipper-profile-section  zipper-max-sm center zipper-relative ">
+    
+    <div class="zipper-edit-container center p-g-4x">
+      <a routerLink="/profile"><fa-icon [icon]="back"></fa-icon></a>
+      <div class="avatar-upload zipper-flex">
+        <form [formGroup]="editPhoto" class="form-photo">
+          <div class="avatar-edit">
+            <input type='file' id="imageUpload" accept=".png, .jpg, .jpeg" #fileInput (change)="uploadFile($event)" />
+          </div>
+          <div class="avatar-preview-box center">
+            <div class="avatar-preview">
+              <div id="imagePreview" [style.backgroundImage]="'url('+ imageUrl +')'">
+              </div>
+            </div>
+          </div>
+        </form>
+        <div class="ml-3x">
+          <p class="zipper-roboto zipper-xxl-text">andrea.latam</p>
+          <span class="zipper-pointer" (click)="fileInput.click()">Cambiar foto de perfil</span>
+        </div>
+      </div>
+      <form [formGroup]="editProfileForm" class="form-data" >
+        <div class="mt-2x  zipper-edit-input zipper-flex ml-3x">
+          <label for="name" class="zipper-barlow ">NOMBRE</label>
+          <input class="zipper-color-gray zipper-input" id="name" type="text"  formControlName="name">
+         
+        </div>
+        <div class="mt-2x  zipper-edit-input zipper-flex ml-3x">
+          <label for="userName" class="zipper-barlow  ">NOMBRE DE USUARIO</label>
+          <input class="zipper-color-gray zipper-input" id="userName" type="text"  formControlName="userName">
+          
+        </div>
+        <div class="mt-2x zipper-edit-input zipper-flex ml-3x">
+          <label for="wsspLink" class="zipper-barlow ">LINK DE WHATSAPP</label>
+          <input class="zipper-color-gray zipper-input" id="wsspLink" type="text"  formControlName="wsspLink">
+         
+        </div>
+        <div class="mt-2x  zipper-edit-input zipper-flex ml-3x">
+          
+          <label for="bio" class="zipper-barlow">BIOGRAFÍA</label>
+          <textarea class="zipper-color-gray zipper-input" id="bio" rows="4" cols="50"  formControlName="bio"></textarea>
+        </div>
+        <div class="mt-2x  zipper-edit-input zipper-flex ml-3x">
+          <label for="email" class="zipper-barlow">EMAIL</label>
+          <input class="zipper-color-gray zipper-input" id="email" type="text"  formControlName="email">
+          
+        </div>
+        <div class="mt-2x  zipper-edit-input zipper-flex ml-3x">
+          <label for="number" class="zipper-barlow">NÚMERO DE TELÉFONO</label>
+          <input class="zipper-color-gray zipper-input" id="number" type="number"  formControlName="number">
+          
+        </div>
+        <div class="mt-2x  zipper-edit-input zipper-flex ml-3x">
+          <label for="country" class="zipper-barlow ">PAÍS</label>
+          <input class="zipper-color-gray zipper-input" id="country" type="text"  formControlName="country">
+         
+        </div>
+        <div class="text-center mt-3x">
+          <button class="zipper-roboto zipper-btn-black zipper-btn-md zipper-regular-font">EDITAR</button>
+        </div>
+      </form>
+    </div>
+    
+  </div>
+</section>

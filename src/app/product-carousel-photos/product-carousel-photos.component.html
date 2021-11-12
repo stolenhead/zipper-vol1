@@ -1,0 +1,14 @@
+<div class="photo">
+  <ngx-slick-carousel  class="carousel slider-section_1"
+  #slickModal="slick-carousel" 
+  [config]="slideConfigMob" 
+  (init)="slickInit($event)"
+  (breakpoint)="breakpoint($event)"
+  (afterChange)="afterChange($event)"
+  (beforeChange)="beforeChange($event)">
+  <div ngxSlickItem *ngFor="let image of images;index as i" class="slideMob">
+    <div class="photo-description-mob" [style.backgroundImage]="'url('+ image.src +')'"></div>
+  </div>
+</ngx-slick-carousel>
+
+</div>

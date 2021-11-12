@@ -1,0 +1,109 @@
+<!-- <h2 mat-dialog-title>Install Angular</h2> -->
+<mat-dialog-content class="mat-typography submitPhotoBox">
+  <div class="modal-container">
+    <div *ngIf="!nextStep">
+      <div class="modal-submit-photo-box" >
+        <form *ngIf="!photoUpload" [formGroup]="editPhoto" (ngSubmit)="onSubmit()" class="form-edit-photo">
+          <div class="form-edit">
+            <label for="imageUploadModal">
+                <fa-icon [icon]="upload"></fa-icon>
+                <span>Sube una imagen</span>
+            </label>
+            <input type='file' id="imageUploadModal" accept=".png, .jpg, .jpeg" #filePhoto (change)="uploadFile($event)" />
+          </div>
+        </form>
+        <form *ngIf="photoUpload" [formGroup]="editPhoto" (ngSubmit)="onSubmit()" class="form-add-photo">
+          <div class="form-edit">
+            <label for="imageUploadModal">
+              <span class="addPhoto p-3x"><fa-icon [icon]="plus"></fa-icon></span>
+            </label>
+            <input type='file' id="imageUploadModal" accept=".png, .jpg, .jpeg" #filePhoto (change)="uploadFile($event)" />
+          </div>
+        </form>
+        <div class="modal-submit-preview" id="modalSubmitPhotoBox">
+          <div class="img-preview">
+            <div  id="imagePreviewModal" class="image-preview" [style.backgroundImage]="'url('+ imageUrl +')'">
+            </div>
+          </div>
+        </div>
+      </div>
+    
+      <div class="modal-carrousel-preview mt-2x">
+        <div class="img-preview">
+          <div *ngFor='let url of images' id="imageCarrouselModal"  [style.backgroundImage]="'url('+ url +')'">
+            <fa-icon class="zipper-right" [icon]="close" ></fa-icon>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    <div *ngIf="nextStep">
+      <div>
+        <form [formGroup]="submitPhoto" class="submitPhotoData" (ngSubmit)="onSubmit()">
+          <div class="mt-2x submitDataInputBox">
+            <div class="submitDataLeft mt-2x ">
+              <label for="name" class="zipper-barlow ">TÍTULO</label>
+              <input class="zipper-color-gray zipper-input " id="name" type="text"  formControlName="name">
+            </div>
+            <div class="submitDataRight mt-2x ml-3x">
+              <label for="userName" class="zipper-barlow  ">TALLA</label>
+              <input class="zipper-color-gray zipper-input" id="userName" type="text"  formControlName="userName">
+            </div>
+          </div>
+          <div class=" mt-2x submitDataInputBox">
+            <div class="submitDataLeft mt-2x ">
+              <label for="name" class="zipper-barlow ">¿ES PERSONALIZABLE?</label>
+              <input class="zipper-color-gray zipper-input " id="name" type="text"  formControlName="name">
+            </div>
+            <div class="submitDataRight mt-2x " >
+              <label for="userName" class="zipper-barlow  ">LINK DE WHATSAPP</label>
+              <input class="zipper-color-gray zipper-input " id="userName" type="text"  formControlName="userName">
+            </div>
+          </div>
+          <div class=" mt-2x submitDataInputBox">
+            <div class="submitDataLeft mt-2x ">
+              <label for="name" class="zipper-barlow ">MATERIALES</label>
+              <input class="zipper-color-gray zipper-input " id="name" type="text"  formControlName="name">
+            </div>
+            <div class="submitDataRight mt-2x ">
+              <label for="userName" class="zipper-barlow  ">PRECIO</label>
+              <input class="zipper-color-gray zipper-input " id="userName" type="text"  formControlName="userName">
+            </div>
+          </div>
+          <div class=" mt-2x submitDataInputBox">
+            <div class="submitDataLeft mt-2x">
+              <label for="wsspLink" class="zipper-barlow">ESTILO</label>
+              <input class="zipper-color-gray zipper-input " id="wsspLink" type="text"  formControlName="wsspLink">
+            </div>
+          </div>
+          <div class=" mt-2x submitDataInputBox">
+            <div class="mt-2x submitDataLeft">
+              <label for="bio" class="zipper-barlow">AÑADIR DESCRIPCIÓN</label>
+              <textarea class="zipper-color-gray zipper-input" id="bio" rows="4" cols="50"  formControlName="bio"></textarea>
+            </div>
+          </div>
+          <div class=" mt-2x submitDataInputBox">
+            <div class="mt-2x  submitDataLeft ">
+              <label for="bio" class="zipper-barlow">ESPECIFICACIONES</label>
+              <textarea class="zipper-color-gray zipper-input" id="bio" rows="4" cols="50"  formControlName="bio"></textarea>
+            </div>
+          </div>
+          
+          
+          <!-- <div class="text-center mt-3x">
+            <button class="zipper-roboto zipper-btn-black zipper-btn-md zipper-regular-font">PUBLICAR</button>
+          </div> -->
+        </form>
+      </div>
+    </div>
+  </div>
+  <div>
+
+  </div>
+  
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+  <button mat-button (click)="nextStep= false">Atrás</button>
+  <button mat-button [mat-dialog-close]="true" cdkFocusInitial>Publicar</button>
+  <button mat-button (click)="nextStep= true" cdkFocusInitial>Siguiente</button>
+</mat-dialog-actions>

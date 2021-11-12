@@ -1,0 +1,106 @@
+@import 'styles.scss';
+
+.checkout-container{
+  .zipper-checkout-section{
+    .zipper-edit-container {
+      .detail-information{
+        width: 60%;
+        .submitPhotoData{
+          .first{
+            width: 50%;
+          }
+          .submitDataRight,.submitDataLeft{
+            label{
+              display: block;
+            }
+            input, textarea{
+              width: 100%;
+              box-sizing: border-box;
+              margin-top: 5px;
+            }
+            input{
+              height: 40px;
+            }
+          }
+          .submitDataRadio{
+            label{
+              display: inline-block;
+            }
+            input{
+              text-align: left;
+              width: auto;
+              height: auto;
+            }
+          }
+        }
+      }
+      .product-total-cost{
+        width: 38%;
+        height: 650px;
+        position: sticky;
+        box-sizing: border-box;
+        top: 0px;
+        .total-container{
+          .zipper-total-grid{
+            .total-base{
+              .zipper-grid{         
+                .grid-elm{
+                  display: inline-block;
+                  -webkit-flex-basis: 66.66667%;
+                  flex-basis: 66.66667%;
+                  width: 66.66667%;
+                  max-width: 66.66667%;
+                }
+                .grid-elm-r{
+                  display: inline-block;
+                  -webkit-flex-basis: 33.33333%;
+                  flex-basis: 33.33333%;
+                  width: 33.33333%;
+                  max-width: 33.33333%;
+                }
+              }
+            }
+          }
+        }
+        .zipper-btn-group{
+          button{
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width:$breakpoint-m-max){
+  .checkout-container{
+    .zipper-checkout-section{
+      .zipper-edit-container {
+        flex-direction: column;
+        .detail-information{
+          width: 100%;
+          box-sizing: border-box;
+          .submitPhotoData{
+            .submitDataInputBox {
+              display: block;
+              .submitDataRight{
+                margin-left: 0px!important;
+              }
+              .first {
+                width: 100%;
+                input{
+                width: 100%;
+                }
+              }
+            }
+          }
+        }
+        .product-total-cost{
+          width: 100%;
+          margin-top: $margin-inside-md;
+          position: static;
+        }
+      }
+    }
+  }
+}

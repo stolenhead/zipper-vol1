@@ -1,0 +1,34 @@
+<div class="profile-photo short">
+  <div class="group-gap">
+      <div class="avatar-upload zipper-flex">
+        <div class="profile-avatar">
+          <div class="avatar-preview-box center">
+            <div class="avatar-preview">
+              <div id="imagePreview" [style.backgroundImage]="'url('+ imageUrl +')'">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="profile-name ml-3x" >
+          <div class="zipper-flex">
+            <h3 class="zipper-barlow  zipper-medium-font">@macaera.latam</h3>
+            <app-follow-btn></app-follow-btn>
+          </div>
+         
+          <div class="top-profile-sales mt-1x zipper-flex">
+            <div class="top-profile-country zipper-roboto zipper-color-text-gray zipper-sm-text">
+              Lima, Perú
+            </div>
+          </div>
+          <div class="top-profile-rate zipper-flex mt-1x">
+            <div>
+              <span><fa-icon [icon]="star"></fa-icon></span>
+              <span><fa-icon [icon]="star"></fa-icon></span>
+            </div>
+            <span class="zipper-roboto ml-2x">(321)</span>
+          </div> 
+        </div>    
+      </div>  
+  </div>
+</div>
+

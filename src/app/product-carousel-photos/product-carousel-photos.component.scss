@@ -1,0 +1,21 @@
+@import 'styles.scss';
+
+.photo{
+  .carousel{
+    .slideMob{
+      .photo-description-mob{
+        height: 400px;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: contain;
+        .slider-section_1{
+          .slick-slide{
+            margin-right: 15px!important;
+          }
+          
+        }
+        
+      }
+    }
+  }
+}

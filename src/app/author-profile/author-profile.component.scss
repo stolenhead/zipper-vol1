@@ -1,0 +1,31 @@
+@import 'styles.scss';
+
+@media (max-width: $breakpoint-m-max){
+  .zipper-profile-section{
+    .top-profile-section.zipper-flex{
+      display: block!important;
+    }
+    .top-follow-section{
+      text-align: left!important;
+      padding: $padding-md;
+      .top-follow-section-btns{
+        display: flex;
+        .mt-2x{
+          margin-left:auto;
+          margin-right: auto;
+          button{
+            width: 170px;
+          }
+        }
+       
+      }
+    }
+  }
+}
+
+.top-follow-section {
+  button{
+    width: 200px;
+  }
+}
+
