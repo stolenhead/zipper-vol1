@@ -18,8 +18,9 @@ export class MarketComponent implements OnInit {
   }
 
   getProductData(){
-    this.http.get('/cards').subscribe((res:Product[])=>{
-        this.products = res;
+    this.http.get('https://stolenhead.github.io/general-json/data/data.json/').subscribe((res:any)=>{
+        this.products =  res.cards;
+       
     })
   }
 }
