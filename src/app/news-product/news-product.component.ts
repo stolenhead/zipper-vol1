@@ -23,9 +23,9 @@ export class NewsProductComponent implements OnInit {
   observer;
 
   slides = [
-    {img: "../../assets/images/landing/welcome_1.jpg"},
-    {img: "../../assets/images/landing/welcome_2.jpg"},
-    {img: "../../assets/images/landing/welcome_3.jpg"},
+    {img: "assets/images/landing/welcome_1.jpg"},
+    {img: "assets/images/landing/welcome_2.jpg"},
+    {img: "assets/images/landing/welcome_3.jpg"},
   ];
 
   slideConfig2 = {
@@ -64,22 +64,15 @@ export class NewsProductComponent implements OnInit {
 
   ngOnInit(): void {
     this.getProductData();
-    this.getCategories();
     this.gutterSize = '20' 
   }
 
   getProductData(){
-  this.http.get('/cards').subscribe((res:Product[])=>{
-      this.cards = res;
+  this.http.get('https://stolenhead.github.io/general-json/data/data.json').subscribe((res:any)=>{
+      this.cards = <Product[]>res.cards;
     })
   }
 
-  getCategories(){
-    this.http.get('/categories').subscribe((res:Product[])=>{
-      this.categories = res;
-      
-    })
-  }
 
   slickInit(e) {
     console.log('slick initialized');

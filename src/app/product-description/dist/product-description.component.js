@@ -25,8 +25,8 @@ var ProductDescriptionComponent = /** @class */ (function () {
     ProductDescriptionComponent.prototype.getDescription = function () {
         var _this = this;
         var url = "/cards/" + this.id;
-        this.http.get('/description').subscribe(function (res) {
-            _this.productDescription = res[0];
+        this.http.get('https://stolenhead.github.io/general-json/data/data.json').subscribe(function (res) {
+            _this.productDescription = res.description[0];
         });
     };
     ProductDescriptionComponent.prototype.getWidth = function () {

@@ -16,9 +16,9 @@ var HomeComponent = /** @class */ (function () {
         this.left = free_solid_svg_icons_1.faArrowLeft;
         this.right = free_solid_svg_icons_1.faArrowRight;
         this.slides = [
-            { img: "../../assets/images/landing/welcome_1.jpg" },
-            { img: "../../assets/images/landing/welcome_2.jpg" },
-            { img: "../../assets/images/landing/welcome_3.jpg" },
+            { img: "assets/images/landing/welcome_1.jpg" },
+            { img: "assets/images/landing/welcome_2.jpg" },
+            { img: "assets/images/landing/welcome_3.jpg" },
         ];
         this.slideConfig = {
             "slidesToShow": 1,
@@ -35,8 +35,8 @@ var HomeComponent = /** @class */ (function () {
     };
     HomeComponent.prototype.getProductData = function () {
         var _this = this;
-        this.http.get('/cards').subscribe(function (res) {
-            _this.cards = res;
+        this.http.get('https://stolenhead.github.io/general-json/data/data.json').subscribe(function (res) {
+            _this.cards = res.cards;
         });
     };
     __decorate([

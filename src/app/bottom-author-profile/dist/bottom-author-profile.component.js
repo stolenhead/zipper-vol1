@@ -27,8 +27,8 @@ var BottomAuthorProfileComponent = /** @class */ (function () {
     };
     BottomAuthorProfileComponent.prototype.getProductData = function () {
         var _this = this;
-        this.http.get('/cards').subscribe(function (res) {
-            _this.products = res;
+        this.http.get('https://stolenhead.github.io/general-json/data/data.json').subscribe(function (res) {
+            _this.products = res.cards;
         });
     };
     BottomAuthorProfileComponent = __decorate([

@@ -25,9 +25,9 @@ export class AuthorProfileComponent implements OnInit {
   }
 
   getProductData(){
-    this.http.get('/cards').subscribe((res:Product[])=>{
-      this.cards = res;
-      console.log(this.cards)
+    this.http.get('https://stolenhead.github.io/general-json/data/data.json').subscribe((res:any)=>{
+      this.cards = <Product[]>res.cards;
+     
     })
   }
 

@@ -20,9 +20,9 @@ export class HomeComponent implements OnInit{
 
   observer;
   slides = [
-    {img: "../../assets/images/landing/welcome_1.jpg"},
-    {img: "../../assets/images/landing/welcome_2.jpg"},
-    {img: "../../assets/images/landing/welcome_3.jpg"},
+    {img: "assets/images/landing/welcome_1.jpg"},
+    {img: "assets/images/landing/welcome_2.jpg"},
+    {img: "assets/images/landing/welcome_3.jpg"},
   ];
 
   slideConfig = {
@@ -45,8 +45,8 @@ export class HomeComponent implements OnInit{
     }
   
     getProductData(){
-    this.http.get('/cards').subscribe((res)=>{
-        this.cards = <Product[]>res;
+    this.http.get('https://stolenhead.github.io/general-json/data/data.json').subscribe((res:any)=>{
+        this.cards = <Product[]>res.cards;
       
       })
     }

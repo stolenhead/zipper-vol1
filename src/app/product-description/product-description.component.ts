@@ -33,8 +33,8 @@ export class ProductDescriptionComponent implements OnInit {
   getDescription(){
     const url = `/cards/${this.id}`;
     
-    this.http.get('/description').subscribe((res)=>{
-      this.productDescription  = <Description> res[0];
+    this.http.get('https://stolenhead.github.io/general-json/data/data.json').subscribe((res:any)=>{
+      this.productDescription  = <Description> res.description[0];
     })
     
   }

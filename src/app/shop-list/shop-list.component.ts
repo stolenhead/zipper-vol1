@@ -21,9 +21,9 @@ export class ShopListComponent implements OnInit {
   }
 
   getProductData(){
-    this.http.get('/shop').subscribe((res:any)=>{
-        this.shopList = res.products;
-        this.shopId = res.id;
+    this.http.get('https://stolenhead.github.io/general-json/data/data.json').subscribe((res:any)=>{
+        this.shopList = res.shop.products;
+        this.shopId = res.shop.id;
     })
   }
 

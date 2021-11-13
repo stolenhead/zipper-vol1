@@ -15,9 +15,9 @@ var NewsProductComponent = /** @class */ (function () {
         this.left = free_solid_svg_icons_1.faArrowLeft;
         this.right = free_solid_svg_icons_1.faArrowRight;
         this.slides = [
-            { img: "../../assets/images/landing/welcome_1.jpg" },
-            { img: "../../assets/images/landing/welcome_2.jpg" },
-            { img: "../../assets/images/landing/welcome_3.jpg" },
+            { img: "assets/images/landing/welcome_1.jpg" },
+            { img: "assets/images/landing/welcome_2.jpg" },
+            { img: "assets/images/landing/welcome_3.jpg" },
         ];
         this.slideConfig2 = {
             "slidesToShow": 5,
@@ -55,19 +55,12 @@ var NewsProductComponent = /** @class */ (function () {
     }
     NewsProductComponent.prototype.ngOnInit = function () {
         this.getProductData();
-        this.getCategories();
         this.gutterSize = '20';
     };
     NewsProductComponent.prototype.getProductData = function () {
         var _this = this;
-        this.http.get('/cards').subscribe(function (res) {
-            _this.cards = res;
-        });
-    };
-    NewsProductComponent.prototype.getCategories = function () {
-        var _this = this;
-        this.http.get('/categories').subscribe(function (res) {
-            _this.categories = res;
+        this.http.get('https://stolenhead.github.io/general-json/data/data.json').subscribe(function (res) {
+            _this.cards = res.cards;
         });
     };
     NewsProductComponent.prototype.slickInit = function (e) {
