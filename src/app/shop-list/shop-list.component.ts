@@ -21,7 +21,7 @@ export class ShopListComponent implements OnInit {
   }
 
   getProductData(){
-    this.http.get('http://localhost:3333/shop').subscribe((res:any)=>{
+    this.http.get('/shop').subscribe((res:any)=>{
         this.shopList = res.products;
         this.shopId = res.id;
     })

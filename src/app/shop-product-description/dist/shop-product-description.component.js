@@ -19,7 +19,6 @@ var ShopProductDescriptionComponent = /** @class */ (function () {
         this.lista = ['1', '2', '3', '4'];
     }
     ShopProductDescriptionComponent.prototype.ngOnInit = function () {
-        console.log(this.shopListData, 'list');
     };
     __decorate([
         core_1.Input()

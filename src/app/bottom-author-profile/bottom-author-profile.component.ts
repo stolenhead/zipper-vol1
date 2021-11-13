@@ -33,7 +33,7 @@ export class BottomAuthorProfileComponent implements OnInit {
   }
 
   getProductData(){
-    this.http.get('http://localhost:3333/cards').subscribe((res:Product[])=>{
+    this.http.get('/cards').subscribe((res:Product[])=>{
         this.products = res;
     })
   }

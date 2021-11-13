@@ -11,7 +11,7 @@ import { Product } from '../models/product';
 
 export class ProfileComponent implements OnInit {
 
-  coverImg =  "../../assets/images/landing/welcome_1.jpg"
+  coverImg =  "assets/images/landing/welcome_1.jpg"
 
   constructor(
     

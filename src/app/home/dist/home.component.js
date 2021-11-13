@@ -42,7 +42,7 @@ var HomeComponent = /** @class */ (function () {
     };
     HomeComponent.prototype.getCategories = function () {
         var _this = this;
-        this.http.get('http://localhost:3333/categories').subscribe(function (res) {
+        this.http.get('/categories').subscribe(function (res) {
             _this.categories = res;
         });
     };

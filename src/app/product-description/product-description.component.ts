@@ -33,7 +33,7 @@ export class ProductDescriptionComponent implements OnInit {
   getDescription(){
     const url = `/cards/${this.id}`;
     
-    this.http.get('http://localhost:3333/description').subscribe((res)=>{
+    this.http.get('/description').subscribe((res)=>{
       this.productDescription  = <Description> res[0];
     })
     

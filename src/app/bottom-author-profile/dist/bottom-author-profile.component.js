@@ -27,7 +27,7 @@ var BottomAuthorProfileComponent = /** @class */ (function () {
     };
     BottomAuthorProfileComponent.prototype.getProductData = function () {
         var _this = this;
-        this.http.get('http://localhost:3333/cards').subscribe(function (res) {
+        this.http.get('/cards').subscribe(function (res) {
             _this.products = res;
         });
     };

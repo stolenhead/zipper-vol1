@@ -20,7 +20,7 @@ var ShopListComponent = /** @class */ (function () {
     };
     ShopListComponent.prototype.getProductData = function () {
         var _this = this;
-        this.http.get('http://localhost:3333/shop').subscribe(function (res) {
+        this.http.get('/shop').subscribe(function (res) {
             _this.shopList = res.products;
             _this.shopId = res.id;
         });

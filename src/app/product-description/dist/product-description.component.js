@@ -25,7 +25,7 @@ var ProductDescriptionComponent = /** @class */ (function () {
     ProductDescriptionComponent.prototype.getDescription = function () {
         var _this = this;
         var url = "/cards/" + this.id;
-        this.http.get('http://localhost:3333/description').subscribe(function (res) {
+        this.http.get('/description').subscribe(function (res) {
             _this.productDescription = res[0];
         });
     };

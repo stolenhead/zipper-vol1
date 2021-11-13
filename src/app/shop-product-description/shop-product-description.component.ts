@@ -25,7 +25,7 @@ export class ShopProductDescriptionComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    console.log(this.shopListData, 'list')
+   
   }
 
 }

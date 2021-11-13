@@ -52,7 +52,7 @@ export class HomeComponent implements OnInit{
     }
  
     getCategories(){
-      this.http.get('http://localhost:3333/categories').subscribe((res:Product[])=>{
+      this.http.get('/categories').subscribe((res:Product[])=>{
         this.categories = res;
        
       })

@@ -60,13 +60,13 @@ var NewsProductComponent = /** @class */ (function () {
     };
     NewsProductComponent.prototype.getProductData = function () {
         var _this = this;
-        this.http.get('http://localhost:3333/cards').subscribe(function (res) {
+        this.http.get('/cards').subscribe(function (res) {
             _this.cards = res;
         });
     };
     NewsProductComponent.prototype.getCategories = function () {
         var _this = this;
-        this.http.get('http://localhost:3333/categories').subscribe(function (res) {
+        this.http.get('/categories').subscribe(function (res) {
             _this.categories = res;
         });
     };
