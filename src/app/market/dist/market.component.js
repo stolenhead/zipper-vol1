@@ -17,7 +17,7 @@ var MarketComponent = /** @class */ (function () {
     };
     MarketComponent.prototype.getProductData = function () {
         var _this = this;
-        this.http.get('https://stolenhead.github.io/general-json/data/data.json/').subscribe(function (res) {
+        this.http.get('https://stolenhead.github.io/general-json/data/data.json').subscribe(function (res) {
             _this.products = res.cards;
         });
     };

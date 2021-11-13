@@ -31,19 +31,12 @@ var HomeComponent = /** @class */ (function () {
     }
     HomeComponent.prototype.ngOnInit = function () {
         this.getProductData();
-        this.getCategories();
         this.gutterSize = '20';
     };
     HomeComponent.prototype.getProductData = function () {
         var _this = this;
         this.http.get('/cards').subscribe(function (res) {
             _this.cards = res;
-        });
-    };
-    HomeComponent.prototype.getCategories = function () {
-        var _this = this;
-        this.http.get('/categories').subscribe(function (res) {
-            _this.categories = res;
         });
     };
     __decorate([

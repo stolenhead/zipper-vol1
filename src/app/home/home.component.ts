@@ -40,7 +40,7 @@ export class HomeComponent implements OnInit{
 
     ngOnInit(): void {
       this.getProductData();
-      this.getCategories();
+    
       this.gutterSize = '20' 
     }
   
@@ -51,11 +51,5 @@ export class HomeComponent implements OnInit{
       })
     }
  
-    getCategories(){
-      this.http.get('/categories').subscribe((res:Product[])=>{
-        this.categories = res;
-       
-      })
-    }
 
 }
